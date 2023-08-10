@@ -604,8 +604,9 @@
 }
 @media screen and (max-width:640px) {
   #wrap footer > div.info > ul.customer {
-    width: 480px;
+    width: 100%;
     padding-left: 10px;
+    box-sizing: border-box;
   }
 }
 #wrap footer > div.info > ul.customer > li {
@@ -692,7 +693,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap footer > div.info > .footer_right {
-    width: 454.4px;
+    width: 100%;
     padding-left: 10px;
   }
 }
@@ -703,7 +704,14 @@
 }
 @media screen and (max-width:640px) {
   #wrap footer > div.info > .footer_right > nav > ul {
+    justify-content: flex-start;
+    width: 100%;
     padding-bottom: 10px;
+  }
+}
+@media screen and (max-width:640px) {
+  #wrap footer > div.info > .footer_right > nav > ul > li {
+    margin-right: 8px;
   }
 }
 #wrap footer > div.info > .footer_right > nav > ul > li > a {
